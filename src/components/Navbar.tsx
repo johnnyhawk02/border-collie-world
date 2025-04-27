@@ -27,6 +27,7 @@ export default function Navbar() {
               src="/logo001.png" 
               alt="BorderCollieWorld Logo" 
               fill
+              sizes="(max-width: 768px) 40px, 48px"
               className="object-contain"
               priority
             />

@@ -11,56 +11,49 @@ const galleryImages = [
     title: "Border Collie in the Field",
     description: "A beautiful Border Collie running through a green field.",
     category: "action",
-    placeholder: "Border Collie running in field"
-    // In a real app: src: "/images/gallery/border-collie-field.jpg"
+    src: "/images/Border Collie in the Field.png"
   },
   {
     id: 2,
     title: "Herding Sheep",
     description: "Border Collie showing off its natural herding instincts with sheep.",
     category: "working",
-    placeholder: "Border Collie herding sheep"
-    // In a real app: src: "/images/gallery/border-collie-herding.jpg"
+    src: "/images/collie-herding sheep.png"
   },
   {
     id: 3,
     title: "Puppy Close-up",
     description: "Adorable Border Collie puppy with those classic intelligent eyes.",
     category: "puppies",
-    placeholder: "Border Collie puppy portrait"
-    // In a real app: src: "/images/gallery/border-collie-puppy.jpg"
+    src: "/images/Puppy Close-up.png"
   },
   {
     id: 4,
     title: "Frisbee Catch",
     description: "Athletic Border Collie catching a frisbee mid-air.",
     category: "action",
-    placeholder: "Border Collie catching frisbee"
-    // In a real app: src: "/images/gallery/border-collie-frisbee.jpg"
+    src: "/images/collie-frisbee.png"
   },
   {
     id: 5,
     title: "Playful Pup",
     description: "Young Border Collie with a playful expression.",
     category: "puppies",
-    placeholder: "Playful Border Collie puppy"
-    // In a real app: src: "/images/gallery/border-collie-playful.jpg"
+    src: "/images/Playful Pup.png"
   },
   {
     id: 6,
     title: "Agility Champion",
     description: "Border Collie navigating an agility course obstacle.",
     category: "working",
-    placeholder: "Border Collie on agility course"
-    // In a real app: src: "/images/gallery/border-collie-agility.jpg"
+    src: "/images/agility-champion.png"
   },
   {
     id: 7,
     title: "Beach Day",
     description: "Happy Border Collie running along the beach shoreline.",
     category: "action",
-    placeholder: "Border Collie at the beach"
-    // In a real app: src: "/images/gallery/border-collie-beach.jpg"
+    src: "/images/beach-day.png"
   },
   {
     id: 8,
@@ -181,18 +174,20 @@ export default function Gallery() {
             onClick={() => openImage(image.id)}
           >
             <div className="relative h-64 bg-gray-200">
-              {/* In a real app, this would be a real image */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                {image.placeholder}
-                {/* In a real app:
+              {image.src ? (
                 <Image
                   src={image.src}
                   alt={image.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index < 4}
                   className="object-cover transition-transform hover:scale-105"
                 />
-                */}
-              </div>
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center text-gray-500">
+                  {image.placeholder}
+                </div>
+              )}
             </div>
             <div className="p-4 bg-white">
               <h3 className="text-lg font-bold">{image.title}</h3>
@@ -231,17 +226,20 @@ export default function Gallery() {
           >
             <div className="relative h-96 bg-gray-200">
               {/* In a real app, this would display the full-sized image */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-700 text-lg">
-                {galleryImages.find(img => img.id === selectedImage)?.placeholder}
-                {/* In a real app:
+              {galleryImages.find(img => img.id === selectedImage)?.src ? (
                 <Image
                   src={galleryImages.find(img => img.id === selectedImage)?.src || ''}
                   alt={galleryImages.find(img => img.id === selectedImage)?.title || ''}
                   fill
+                  sizes="(max-width: 1200px) 100vw, 75vw"
+                  priority
                   className="object-contain"
                 />
-                */}
-              </div>
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center text-gray-700 text-lg">
+                  {galleryImages.find(img => img.id === selectedImage)?.placeholder}
+                </div>
+              )}
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-2">
