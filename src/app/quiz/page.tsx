@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 // Quiz questions data
 const quizQuestions = [

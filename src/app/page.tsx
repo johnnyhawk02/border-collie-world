@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import FeatureSection from '@/components/FeatureSection';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 export default function Home() {
   return (

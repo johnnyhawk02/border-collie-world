@@ -263,7 +263,7 @@ export default function Gallery() {
       <div className="mt-16 text-center bg-blue-50 p-8 rounded-lg cartoon-border">
         <h2 className="text-2xl font-bold mb-2">Share Your Border Collie</h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Have an amazing Border Collie photo to share? We'd love to see your furry friend!
+          Have an amazing Border Collie photo to share? We&apos;d love to see your furry friend!
           Submit your best Border Collie photos to be featured in our gallery.
         </p>
         <button className="cartoon-button">

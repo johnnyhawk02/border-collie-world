@@ -17,7 +17,7 @@ export default function Hero() {
             Welcome to <span className="text-primary font-display">BorderCollieWorld</span>
           </h1>
           <p className="text-lg mb-6">
-            Discover everything about the world's smartest and most energetic dog breed.
+            Discover everything about the world&apos;s smartest and most energetic dog breed.
             From training tips to fun facts, games, and more!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

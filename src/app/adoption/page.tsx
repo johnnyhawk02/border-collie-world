@@ -123,14 +123,14 @@ export default function Adoption() {
           >
             <h2 className="text-2xl font-bold mb-4">About Border Collie Adoption</h2>
             <p className="mb-4">
-              Adopting a Border Collie is a rewarding experience, but it's important to understand 
+              Adopting a Border Collie is a rewarding experience, but it&apos;s important to understand 
               the unique needs and characteristics of this intelligent and energetic breed before 
               bringing one into your home.
             </p>
             <p className="mb-4">
               Border Collies are often surrendered to shelters or rescue organizations because their 
-              owners underestimated their exercise needs or couldn't handle their high energy levels. 
-              By adopting a Border Collie, you're giving a second chance to a dog who may have been 
+              owners underestimated their exercise needs or couldn&apos;t handle their high energy levels. 
+              By adopting a Border Collie, you&apos;re giving a second chance to a dog who may have been 
               misunderstood or overwhelmed their previous owner.
             </p>
             <p>
@@ -167,7 +167,7 @@ export default function Adoption() {
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Is a Border Collie Right for You?</h2>
         <p className="text-center max-w-3xl mx-auto mb-8">
-          Before adopting, it's important to honestly assess whether a Border Collie is the right fit 
+          Before adopting, it&apos;s important to honestly assess whether a Border Collie is the right fit 
           for your lifestyle and living situation. Review the following checklist:
         </p>
         
@@ -231,7 +231,7 @@ export default function Adoption() {
               className="cartoon-border bg-white overflow-hidden"
             >
               <div className="h-48 bg-gray-200 flex items-center justify-center text-gray-500">
-                {dog.name}'s Photo Placeholder
+                {dog.name}&apos;s Photo Placeholder
                 {/* Once you have images:
                 <Image
                   src={`/images/adoptable/${dog.id}.jpg`}
@@ -290,7 +290,7 @@ export default function Adoption() {
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold mb-4">Ready to Adopt?</h2>
         <p className="max-w-3xl mx-auto mb-6">
-          If you've considered all aspects of Border Collie ownership and feel ready to provide a 
+          If you&apos;ve considered all aspects of Border Collie ownership and feel ready to provide a 
           loving, active home for one of these amazing dogs, take the next step in your adoption journey!
         </p>
         

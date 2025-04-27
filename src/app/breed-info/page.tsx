@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function BreedInfo() {
@@ -99,7 +98,7 @@ export default function BreedInfo() {
             <li><strong>Intelligence:</strong> Consistently ranked as the most intelligent dog breed</li>
             <li><strong>Energy:</strong> Very high energy, requires lots of physical and mental exercise</li>
             <li><strong>Work Ethic:</strong> Strong drive to work and complete tasks</li>
-            <li><strong>Sensitivity:</strong> Highly responsive to owner's commands and emotions</li>
+            <li><strong>Sensitivity:</strong> Highly responsive to owner&apos;s commands and emotions</li>
             <li><strong>Trainability:</strong> Extremely trainable and eager to learn</li>
           </ul>
         </motion.div>
@@ -124,9 +123,9 @@ export default function BreedInfo() {
             being a Border Collie named Chaser who knew over 1,000 words!</p>
           </div>
           <div className="p-4 bg-white rounded-lg cartoon-border">
-            <h3 className="text-xl font-bold mb-2">The "Eye"</h3>
-            <p>Border Collies are known for their intense stare (called "the eye") which
-            they use to control sheep—it's an instinctive herding technique!</p>
+            <h3 className="text-xl font-bold mb-2">The &quot;Eye&quot;</h3>
+            <p>Border Collies are known for their intense stare (called &quot;the eye&quot;) which
+            they use to control sheep—it&apos;s an instinctive herding technique!</p>
           </div>
         </div>
       </motion.div>
@@ -156,7 +155,7 @@ export default function BreedInfo() {
           <div>
             <h3 className="text-xl font-bold mb-3">Grooming</h3>
             <p className="mb-4">
-              Brush your Border Collie's coat weekly to remove loose hair and prevent 
+              Brush your Border Collie&apos;s coat weekly to remove loose hair and prevent 
               matting. They shed seasonally, during which daily brushing may be needed.
             </p>
             <h3 className="text-xl font-bold mb-3">Health Considerations</h3>
@@ -171,7 +170,7 @@ export default function BreedInfo() {
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold mb-4">Is a Border Collie Right for You?</h2>
         <p className="max-w-3xl mx-auto mb-6">
-          Border Collies make wonderful companions for the right homes, but they're not for everyone. 
+          Border Collies make wonderful companions for the right homes, but they&apos;re not for everyone. 
           They thrive with active owners who can provide plenty of exercise, mental stimulation, 
           and training. Consider the following before bringing a Border Collie into your life:
         </p>
