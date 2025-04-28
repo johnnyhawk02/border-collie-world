@@ -4,6 +4,13 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
     formats: ['image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.yourdomain.com',
+        pathname: '/images/**',
+      },
+    ],
   },
   // Ensure static assets are included
   reactStrictMode: true,

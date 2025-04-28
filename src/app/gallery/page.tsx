@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
 
+// Replace this with your actual subdomain once it's set up
+const ASSET_URL = "https://assets.yourdomain.com";
+
 // Sample gallery data (in a real app, this could come from a CMS or API)
 const galleryImages = [
   {
@@ -11,49 +14,49 @@ const galleryImages = [
     title: "Border Collie in the Field",
     description: "A beautiful Border Collie running through a green field.",
     category: "action",
-    src: "/optimized/Border Collie in the Field.webp"
+    src: `${ASSET_URL}/images/Border Collie in the Field.webp`
   },
   {
     id: 2,
     title: "Herding Sheep",
     description: "Border Collie showing off its natural herding instincts with sheep.",
     category: "working",
-    src: "/optimized/collie-herding sheep.webp"
+    src: `${ASSET_URL}/images/collie-herding sheep.webp`
   },
   {
     id: 3,
     title: "Puppy Close-up",
     description: "Adorable Border Collie puppy with those classic intelligent eyes.",
     category: "puppies",
-    src: "/optimized/Puppy Close-up.webp"
+    src: `${ASSET_URL}/images/Puppy Close-up.webp`
   },
   {
     id: 4,
     title: "Frisbee Catch",
     description: "Athletic Border Collie catching a frisbee mid-air.",
     category: "action",
-    src: "/optimized/collie-frisbee.webp"
+    src: `${ASSET_URL}/images/collie-frisbee.webp`
   },
   {
     id: 5,
     title: "Playful Pup",
     description: "Young Border Collie with a playful expression.",
     category: "puppies",
-    src: "/optimized/Playful Pup.webp"
+    src: `${ASSET_URL}/images/Playful Pup.webp`
   },
   {
     id: 6,
     title: "Agility Champion",
     description: "Border Collie navigating an agility course obstacle.",
     category: "working",
-    src: "/optimized/agility-champion.webp"
+    src: `${ASSET_URL}/images/agility-champion.webp`
   },
   {
     id: 7,
     title: "Beach Day",
     description: "Happy Border Collie running along the beach shoreline.",
     category: "action",
-    src: "/optimized/beach-day.webp"
+    src: `${ASSET_URL}/images/beach-day.webp`
   },
   {
     id: 8,
