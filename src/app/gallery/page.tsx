@@ -11,49 +11,49 @@ const galleryImages = [
     title: "Border Collie in the Field",
     description: "A beautiful Border Collie running through a green field.",
     category: "action",
-    src: "/images/Border Collie in the Field.png"
+    src: "/optimized/Border Collie in the Field.webp"
   },
   {
     id: 2,
     title: "Herding Sheep",
     description: "Border Collie showing off its natural herding instincts with sheep.",
     category: "working",
-    src: "/images/collie-herding sheep.png"
+    src: "/optimized/collie-herding sheep.webp"
   },
   {
     id: 3,
     title: "Puppy Close-up",
     description: "Adorable Border Collie puppy with those classic intelligent eyes.",
     category: "puppies",
-    src: "/images/Puppy Close-up.png"
+    src: "/optimized/Puppy Close-up.webp"
   },
   {
     id: 4,
     title: "Frisbee Catch",
     description: "Athletic Border Collie catching a frisbee mid-air.",
     category: "action",
-    src: "/images/collie-frisbee.png"
+    src: "/optimized/collie-frisbee.webp"
   },
   {
     id: 5,
     title: "Playful Pup",
     description: "Young Border Collie with a playful expression.",
     category: "puppies",
-    src: "/images/Playful Pup.png"
+    src: "/optimized/Playful Pup.webp"
   },
   {
     id: 6,
     title: "Agility Champion",
     description: "Border Collie navigating an agility course obstacle.",
     category: "working",
-    src: "/images/agility-champion.png"
+    src: "/optimized/agility-champion.webp"
   },
   {
     id: 7,
     title: "Beach Day",
     description: "Happy Border Collie running along the beach shoreline.",
     category: "action",
-    src: "/images/beach-day.png"
+    src: "/optimized/beach-day.webp"
   },
   {
     id: 8,
