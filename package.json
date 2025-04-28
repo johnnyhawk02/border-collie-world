@@ -5,6 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next export",
+    "build:static": "next build && cp -r out/ .",
+    "deploy": "next build && mkdir -p out && cp -r .next/static ./out && cp -r public/* ./out",
+    "cloudflare": "npm run build && mkdir -p out && cp -r .next/* out/ && cp -r public/* out/",
     "start": "next start",
     "lint": "next lint"
   },
