@@ -165,7 +165,7 @@ export default function Gallery() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 md:px-6"
       >
         {filteredImages.map((image, index) => (
           <motion.div
@@ -176,13 +176,13 @@ export default function Gallery() {
             className="cartoon-border overflow-hidden cursor-pointer"
             onClick={() => openImage(image.id)}
           >
-            <div className="relative h-64 bg-gray-200">
+            <div className="relative h-48 sm:h-56 md:h-64 bg-gray-200">
               {image.src ? (
                 <Image
                   src={image.src}
                   alt={image.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 50vw, 33vw"
                   priority={index < 4}
                   className="object-cover transition-transform hover:scale-105"
                 />
@@ -192,9 +192,9 @@ export default function Gallery() {
                 </div>
               )}
             </div>
-            <div className="p-4 bg-white">
-              <h3 className="text-lg font-bold">{image.title}</h3>
-              <p className="text-gray-600 text-sm">{image.description}</p>
+            <div className="p-3 md:p-4 bg-white">
+              <h3 className="text-base md:text-lg font-bold">{image.title}</h3>
+              <p className="text-gray-600 text-xs md:text-sm">{image.description}</p>
             </div>
           </motion.div>
         ))}
@@ -224,17 +224,17 @@ export default function Gallery() {
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="bg-white rounded-lg cartoon-border max-w-4xl w-full overflow-hidden"
+            className="bg-white rounded-lg cartoon-border max-w-4xl w-full max-h-[90vh] overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative h-96 bg-gray-200">
+            <div className="relative h-60 sm:h-72 md:h-96 bg-gray-200">
               {/* In a real app, this would display the full-sized image */}
               {galleryImages.find(img => img.id === selectedImage)?.src ? (
                 <Image
                   src={galleryImages.find(img => img.id === selectedImage)?.src || ''}
                   alt={galleryImages.find(img => img.id === selectedImage)?.title || ''}
                   fill
-                  sizes="(max-width: 1200px) 100vw, 75vw"
+                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 75vw, 1200px"
                   priority
                   className="object-contain"
                 />
@@ -244,11 +244,11 @@ export default function Gallery() {
                 </div>
               )}
             </div>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">
+            <div className="p-4 md:p-6">
+              <h2 className="text-xl md:text-2xl font-bold mb-2">
                 {galleryImages.find(img => img.id === selectedImage)?.title}
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm md:text-base">
                 {galleryImages.find(img => img.id === selectedImage)?.description}
               </p>
               <button
@@ -263,7 +263,7 @@ export default function Gallery() {
       )}
 
       {/* Submit photo CTA */}
-      <div className="mt-16 text-center bg-blue-50 p-8 rounded-lg cartoon-border">
+      <div className="mt-12 md:mt-16 text-center bg-blue-50 p-6 md:p-8 rounded-lg cartoon-border mx-4 md:mx-6">
         <h2 className="text-2xl font-bold mb-2">Share Your Border Collie</h2>
         <p className="max-w-2xl mx-auto mb-6">
           Have an amazing Border Collie photo to share? We&apos;d love to see your furry friend!
