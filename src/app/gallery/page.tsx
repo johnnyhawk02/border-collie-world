@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 // Replace this with your actual subdomain once it's set up
-const ASSET_URL = "https://assets.yourdomain.com";
+const ASSET_URL = "https://bcw-assets.jhawk.uk";
 
 // Sample gallery data (in a real app, this could come from a CMS or API)
 const galleryImages = [
